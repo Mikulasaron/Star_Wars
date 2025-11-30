@@ -1,0 +1,519 @@
+/* Alap beállítások */
+/* Google Fonts – Orbitron */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #050814;
+  --bg-elevated: #0b0f1e;
+  --accent: #ffe81f;
+  --accent-soft: #e2d060;
+  --text-color: #f5f5f5;
+  --muted: #a0a4b8;
+  --danger: #ff5c5c;
+  --radius-lg: 1rem;
+  --radius-md: 0.75rem;
+  --shadow-soft: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.6);
+  --max-width: 72rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Orbitron", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background: #050814;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Layout */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: rgba(5, 8, 20, 0.95);
+  border-bottom: 1px solid rgba(255, 232, 31, 0.6);
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  font-size: 1.1rem;
+}
+
+.logo-text {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.nav-toggle {
+  background: none;
+  border: 1px solid rgba(255, 232, 31, 0.6);
+  color: var(--accent);
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.site-nav {
+  display: none;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.site-nav a {
+  display: block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.site-nav a:hover {
+  background: rgba(255, 232, 31, 0.1);
+}
+
+.site-nav a.active {
+  background: var(--accent);
+  color: #000;
+}
+
+/* Mobile nav open állapot */
+.site-nav.is-open {
+  display: block;
+}
+
+/* Page layout */
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.section {
+  margin-block: 1.5rem;
+  background: rgba(11, 15, 30, 0.9);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(255, 232, 31, 0.1);
+}
+
+.section-header {
+  margin-top: 1.5rem;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.hero-content p {
+  color: var(--muted);
+}
+
+.hero-image-placeholder {
+  min-height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Grid szekciók */
+.section-grid,
+.card-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: rgba(5, 8, 20, 0.95);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  border: 1px solid rgba(255, 232, 31, 0.12);
+  box-shadow: var(--shadow-soft);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.card p {
+  color: var(--muted);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #000;
+}
+
+.btn.primary:hover {
+  background: var(--accent-soft);
+}
+
+.btn.secondary {
+  border-color: rgba(255, 232, 31, 0.6);
+  color: var(--accent);
+  background: transparent;
+}
+
+.btn.secondary:hover {
+  background: rgba(255, 232, 31, 0.15);
+}
+
+/* Form elemek */
+.section-form form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.form-group,
+.form-group-checkbox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+label,
+legend {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="search"],
+select,
+textarea {
+  background: #050814;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 232, 31, 0.25);
+  padding: 0.45rem 0.6rem;
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(255, 232, 31, 0.5);
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.error-message {
+  font-size: 0.75rem;
+  color: var(--danger);
+  min-height: 1em;
+}
+
+
+
+/* Interaktív tool */
+.section-tool .tool-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-block: 0.75rem;
+}
+
+.order-result {
+  padding-left: 1.2rem;
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Timeline */
+.timeline {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.timeline-year {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+.timeline-content h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.timeline-filters {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* Character search */
+.character-search {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1.25rem 0.75rem 2rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ============================
+   TABLET (min-width: 40em)
+   ============================ */
+@media (min-width: 40em) {
+  .site-header {
+    padding-inline: 1.5rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .site-nav {
+    display: block;
+  }
+
+  .site-nav ul {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .page {
+    padding: 1.5rem;
+  }
+
+  .hero {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .section-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-tool .tool-controls {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .timeline {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ============================
+   DESKTOP (min-width: 60em)
+   ============================ */
+@media (min-width: 60em) {
+  .page {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .section {
+    margin-block: 2rem;
+    padding: 1.5rem 1.75rem;
+  }
+
+  .section-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .timeline {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .timeline-item {
+    grid-template-columns: 4.5rem 1fr;
+  }
+}
+
+
+/* ========= Kvíz oldal ========= */
+
+.section-quiz {
+  display: grid;
+  gap: 1rem;
+}
+
+.quiz-question {
+  border: 1px solid rgba(255, 232, 31, 0.25);
+  border-radius: var(--radius-md);
+  padding: 0.9rem;
+  background: rgba(5, 8, 20, 0.95);
+}
+
+.quiz-question h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.quiz-question p {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+}
+
+.quiz-options {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.quiz-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 232, 31, 0.15);
+  background: rgba(7, 11, 26, 0.9);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.quiz-option input[type="radio"] {
+  accent-color: var(--accent);
+}
+
+.quiz-option.correct {
+  border-color: #2ecc71;
+  background: rgba(46, 204, 113, 0.15);
+}
+
+.quiz-option.incorrect {
+  border-color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.15);
+}
+
+.quiz-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.quiz-result {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--accent-soft);
+}
+
+/* nagyobb kijelzőn a gombok egymás mellett */
+@media (min-width: 40em) {
+  .quiz-actions {
+    flex-direction: row;
+  }
+}
