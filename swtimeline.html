@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mikulás Áron">
+  <meta name="description" content="Star Wars filmek és sorozatok idővonala.">
+  <title>Star Wars Idővonal</title>
+  <link rel="icon"  type="image/png" href="images/favicon.png">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/swstyles.css">
+  <script src="js/swmain.js" defer></script>
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-icon">★</span>
+      <span class="logo-text">Star Wars Archívum</span>
+    </div>
+    <button class="nav-toggle" aria-label="Menü váltása" aria-expanded="false">
+      ☰
+    </button>
+    <nav class="site-nav" id="mainNav">
+      <ul>
+        <li><a href="swmain.html">Főoldal</a></li>
+        <li><a href="swtimeline.html" class="active">Idővonal</a></li>
+        <li><a href="swcharacters.html">Karakterek</a></li>
+        <li><a href="swships.html">Űrhajók</a></li>
+        <li><a href="swquiz.html">Star Wars kvíz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page page-timeline">
+    <section class="section section-header">
+      <h1>Star Wars idővonal</h1>
+      <p>
+        A galaxis története a <strong>Yavini csata</strong> előtt (BBY) és után (ABY).
+        Az alábbi lista a fontosabb filmeket és sorozatokat mutatja be.
+      </p>
+
+      <div class="timeline-filters">
+        <label for="eraFilter">Szűrés korszak szerint:</label>
+        <select id="eraFilter">
+          <option value="all">Mind</option>
+          <option value="old-republic">Régi Köztársaság</option>
+          <option value="prequel">Prequel korszak</option>
+          <option value="original">Eredeti trilógia</option>
+          <option value="sequel">Folytatás trilógia</option>
+          <option value="between">Köztes időszakok (sorozatok)</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="timeline" id="timelineList">
+      <!-- Példa elemek – valós kronológiát nagyjából követve -->
+      <article class="timeline-item" data-era="prequel">
+        <div class="timeline-year">32 BBY</div>
+        <div class="timeline-content">
+          <h2>I. rész – Baljós árnyak</h2>
+          <p>Qui-Gon Jinn és Obi-Wan Kenobi felfedezik a fiatal Anakin Skywalkert.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item" data-era="prequel">
+        <div class="timeline-year">22 BBY</div>
+        <div class="timeline-content">
+          <h2>II. rész – A klónok támadása</h2>
+          <p>Kitör a klónháború, Anakin közelebb kerül a sötét oldalhoz.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item" data-era="prequel">
+        <div class="timeline-year">19 BBY</div>
+        <div class="timeline-content">
+          <h2>III. rész – A Sithek bosszúja</h2>
+          <p>A Köztársaság bukása, a Birodalom felemelkedése és Darth Vader születése.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item" data-era="between">
+        <div class="timeline-year">5 BBY</div>
+        <div class="timeline-content">
+          <h2>Star Wars: Rebels (sorozat)</h2>
+          <p>A korai lázadók harca a Birodalom ellen.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item" data-era="between">
+        <div class="timeline-year">5 BBY</div>
+        <div class="timeline-content">
+          <h2>Andor (sorozat)</h2>
+          <p>Cassian Andor története és a lázadás születése.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item" data-era="original">
+        <div class="timeline-year">0 BBY</div>
+        <div class="timeline-content">
+          <h2>Zsivány Egyes – Egy Star Wars-történet</h2>
+          <p>A Halálcsillag terveinek ellopása közvetlenül az Új remény előtt.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item" data-era="original">
+        <div class="timeline-year">0 ABY</div>
+        <div class="timeline-content">
+          <h2>IV. rész – Egy új remény</h2>
+          <p>Luke Skywalker csatlakozik a Lázadáshoz, és elindul Jedi útján.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item" data-era="original">
+        <div class="timeline-year">3 ABY</div>
+        <div class="timeline-content">
+          <h2>V. rész – A Birodalom visszavág</h2>
+          <p>Darth Vader felfedi Luke-nak az igazságot, a Lázadás nagy csapást szenved.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item" data-era="original">
+        <div class="timeline-year">4 ABY</div>
+        <div class="timeline-content">
+          <h2>VI. rész – A Jedi visszatér</h2>
+          <p>A második Halálcsillag pusztulása, a Birodalom bukása.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item" data-era="between">
+        <div class="timeline-year">9 ABY</div>
+        <div class="timeline-content">
+          <h2>The Mandalorian (sorozat)</h2>
+          <p>Din Djarin és Grogu kalandjai a Birodalom bukása utáni galaxisban.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item" data-era="sequel">
+        <div class="timeline-year">34 ABY</div>
+        <div class="timeline-content">
+          <h2>VII. rész – Az ébredő Erő</h2>
+          <p>Az Első Rend fenyegetése és Rey felemelkedése.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item" data-era="sequel">
+        <div class="timeline-year">34 ABY</div>
+        <div class="timeline-content">
+          <h2>VIII. rész – Az utolsó Jedik</h2>
+          <p>Luke száműzetése és a Jedi Rend jövője.</p>
+        </div>
+      </article>
+
+      <article class="timeline-item" data-era="sequel">
+        <div class="timeline-year">35 ABY</div>
+        <div class="timeline-content">
+          <h2>IX. rész – Skywalker kora</h2>
+          <p>A végső összecsapás a Sithek és a lázadók örökösei között.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Star Wars Archívum – Idővonal oldal.</p>
+  </footer>
+
+  
+</body>
+</html>
