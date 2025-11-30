@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mikulás Áron">
+  <meta name="description" content="Star Wars ikonikus űrhajók bemutatása.">
+  <title>Star Wars Űrhajók</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/swstyles.css">
+  <script src="js/swmain.js" defer></script>
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-icon">★</span>
+      <span class="logo-text">Star Wars Archívum</span>
+    </div>
+    <button class="nav-toggle" aria-label="Menü váltása" aria-expanded="false">
+      ☰
+    </button>
+    <nav class="site-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="swtimeline.html">Idővonal</a></li>
+        <li><a href="swcharacters.html">Karakterek</a></li>
+        <li><a href="swships.html" class="active">Űrhajók</a></li>
+        <li><a href="swquiz.html">Star Wars kvíz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page page-ships">
+    <section class="section section-header">
+      <h1>Ikonikus űrhajók</h1>
+      <p>
+        A galaxisban az űrhajók jelentik a szabadságot – vagy éppen az elnyomást.
+        Nézd meg a legismertebb hajókat rövid leírással!
+      </p>
+    </section>
+
+    <section class="card-grid">
+      <article class="card ship-card">
+        <img src="images/millennium_falcon.jpg" alt="Millennium Falcon" class="card-image">
+        <div class="card-body">
+          <h2>Millennium Falcon</h2>
+          <p>
+            Han Solo legendás YT-1300 típusú teherhajója, amely az egyik 
+            leggyorsabb jármű a galaxisban – ha éppen működik.
+          </p>
+        </div>
+      </article>
+
+      <article class="card ship-card">
+        <img src="images/x_wing.jpg" alt="T-65 X-szárnyú" class="card-image">
+        <div class="card-body">
+          <h2>T-65 X-szárnyú</h2>
+          <p>
+            A Lázadók Szövetségének fő vadászgépe, amely kulcsszerepet játszott 
+            a Halálcsillag elpusztításában.
+          </p>
+        </div>
+      </article>
+
+      <article class="card ship-card">
+        <img src="images/tie_fighter.jpg" alt="TIE-vadász" class="card-image">
+        <div class="card-body">
+          <h2>TIE-vadász</h2>
+          <p>
+            A Birodalom jellegzetes vadászgépe, pajzs nélkül, de félelmetes 
+            manőverezőképességgel és nagy számban.
+          </p>
+        </div>
+      </article>
+
+      <article class="card ship-card">
+        <img src="images/star_destroyer.jpg" alt="Csillagromboló" class="card-image">
+        <div class="card-body">
+          <h2>Imperial I-osztályú Csillagromboló</h2>
+          <p>
+            Óriási hadihajó, amely egy-egy szektor teljes megszállására is 
+            alkalmas, a Birodalom erődemonstrációjának szimbóluma.
+          </p>
+        </div>
+      </article>
+
+      <article class="card ship-card">
+        <img src="images/slave_1.jpg" alt="Slave I / Firespray" class="card-image">
+        <div class="card-body">
+          <h2>Slave I (Firespray)</h2>
+          <p>
+            Jango és Boba Fett nehéz vadász- és szállítóhajója, különleges 
+            függőleges elrendezéssel.
+          </p>
+        </div>
+      </article>
+
+      <article class="card ship-card">
+        <img src="images/razor_crest.jpg" alt="Razor Crest" class="card-image">
+        <div class="card-body">
+          <h2>Razor Crest</h2>
+          <p>
+            Din Djarin (a Mandalóri) gunship-je, amelyet fejvadász küldetésekhez 
+            használ a galaxis peremvidékén.
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Star Wars Archívum – Űrhajók.</p>
+  </footer>
+
+  
+</body>
+</html>

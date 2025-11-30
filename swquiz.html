@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Saját Neved">
+  <meta name="description" content="Star Wars kvíz – teszteld a tudásod.">
+  <title>Star Wars Kvíz</title>
+
+  <link rel="icon" href="images/swfavicon.png" type="image/png">
+
+  
+  <link rel="stylesheet" href="css/swstyles.css">
+  <script src="js/swmain.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-icon">★</span>
+      <span class="logo-text">Star Wars Archívum</span>
+    </div>
+    <button class="nav-toggle" aria-label="Menü váltása" aria-expanded="false">
+      ☰
+    </button>
+    <nav class="site-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="swtimeline.html">Idővonal</a></li>
+        <li><a href="swcharacters.html">Karakterek</a></li>
+        <li><a href="swships.html">Űrhajók</a></li>
+        <li><a href="swquiz.html" class="active">Star Wars kvíz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page page-quiz">
+    <section class="section section-header">
+      <h1>Star Wars Kvíz</h1>
+      <p>
+        8 kérdés, feleletválasztós formában.  
+        <strong>Beküldés</strong> után a választott lehetőség:
+        <span style="color:#2ecc71;">zöld</span> ha helyes, 
+        <span style="color:#ff6b6b;">piros</span> ha hibás.  
+        Az <strong>„Újrakezdés”</strong> gombbal törölheted az összes választ.
+      </p>
+    </section>
+
+    <section class="section section-quiz">
+      <form id="quizForm">
+        <!-- 1. kérdés -->
+        <article class="quiz-question">
+          <h2>1. kérdés</h2>
+          <p>Mi a Tatooine legismertebb lakosának, Luke-nak a vezetékneve?</p>
+          <div class="quiz-options">
+            <label class="quiz-option">
+              <input type="radio" name="q1" value="a">
+              <span>Kenobi</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q1" value="b" data-correct="true">
+              <span>Skywalker</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q1" value="c">
+              <span>Organa</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q1" value="d">
+              <span>Solo</span>
+            </label>
+          </div>
+        </article>
+
+        <!-- 2. kérdés -->
+        <article class="quiz-question">
+          <h2>2. kérdés</h2>
+          <p>Melyik rend őrzi a békét a galaxisban az Erő segítségével?</p>
+          <div class="quiz-options">
+            <label class="quiz-option">
+              <input type="radio" name="q2" value="a" data-correct="true">
+              <span>Jedi Rend</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q2" value="b">
+              <span>Sith Birodalom</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q2" value="c">
+              <span>Mandalóri klánok</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q2" value="d">
+              <span>Kereskedelmi Szövetség</span>
+            </label>
+          </div>
+        </article>
+
+        <!-- 3. kérdés -->
+        <article class="quiz-question">
+          <h2>3. kérdés</h2>
+          <p>Mi a Millennium Falcon eredeti tulajdonosának neve, mielőtt Han Solo megszerezte?</p>
+          <div class="quiz-options">
+            <label class="quiz-option">
+              <input type="radio" name="q3" value="a">
+              <span>Jabba</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q3" value="b" data-correct="true">
+              <span>Lando Calrissian</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q3" value="c">
+              <span>Chewbacca</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q3" value="d">
+              <span>Boba Fett</span>
+            </label>
+          </div>
+        </article>
+
+        <!-- 4. kérdés -->
+        <article class="quiz-question">
+          <h2>4. kérdés</h2>
+          <p>Melyik űrállomást nevezik „Halálcsillagnak”?</p>
+          <div class="quiz-options">
+            <label class="quiz-option">
+              <input type="radio" name="q4" value="a">
+              <span>Starkiller bázis</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q4" value="b" data-correct="true">
+              <span>DS-1 harci űrállomás</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q4" value="c">
+              <span>Coruscant pályaudvar</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q4" value="d">
+              <span>Nar Shaddaa állomás</span>
+            </label>
+          </div>
+        </article>
+
+        <!-- 5. kérdés -->
+        <article class="quiz-question">
+          <h2>5. kérdés</h2>
+          <p>Melyik bolygóról származik Yoda mester?</p>
+          <div class="quiz-options">
+            <label class="quiz-option">
+              <input type="radio" name="q5" value="a">
+              <span>Dagobah</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q5" value="b">
+              <span>Coruscant</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q5" value="c">
+              <span>Mustafar</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q5" value="d" data-correct="true">
+              <span>A származási bolygója ismeretlen</span>
+            </label>
+          </div>
+        </article>
+
+        <!-- 6. kérdés -->
+        <article class="quiz-question">
+          <h2>6. kérdés</h2>
+          <p>Ki volt Anakin Skywalker mestere padawan korában?</p>
+          <div class="quiz-options">
+            <label class="quiz-option">
+              <input type="radio" name="q6" value="a" data-correct="true">
+              <span>Obi-Wan Kenobi</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q6" value="b">
+              <span>Yoda</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q6" value="c">
+              <span>Mace Windu</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q6" value="d">
+              <span>Qui-Gon Jinn az egész pályafutása alatt</span>
+            </label>
+          </div>
+        </article>
+
+        <!-- 7. kérdés -->
+        <article class="quiz-question">
+          <h2>7. kérdés</h2>
+          <p>Mi Boba Fett hajójának (klasszikus) neve?</p>
+          <div class="quiz-options">
+            <label class="quiz-option">
+              <input type="radio" name="q7" value="a" data-correct="true">
+              <span>Slave I</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q7" value="b">
+              <span>Razor Crest</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q7" value="c">
+              <span>Ghost</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q7" value="d">
+              <span>Executor</span>
+            </label>
+          </div>
+        </article>
+
+        <!-- 8. kérdés -->
+        <article class="quiz-question">
+          <h2>8. kérdés</h2>
+          <p>Melyik oldalt szolgálja a TIE-vadász flotta?</p>
+          <div class="quiz-options">
+            <label class="quiz-option">
+              <input type="radio" name="q8" value="a">
+              <span>Lázadók Szövetsége</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q8" value="b" data-correct="true">
+              <span>Galaktikus Birodalom</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q8" value="c">
+              <span>Első Rend</span>
+            </label>
+            <label class="quiz-option">
+              <input type="radio" name="q8" value="d">
+              <span>Jedi Rend</span>
+            </label>
+          </div>
+        </article>
+
+        <div class="quiz-actions">
+          <button type="submit" class="btn primary">Beküldés</button>
+          <button type="button" id="quizReset" class="btn secondary">Újrakezdés</button>
+        </div>
+
+        <p id="quizResult" class="quiz-result" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Star Wars Archívum – Kvíz oldal.</p>
+  </footer>
+
+  
+</body>
+</html>

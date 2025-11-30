@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mikulás Áron">
+  <meta name="description" content="Star Wars főbb karakterek bemutatása.">
+  <title>Star Wars Karakterek</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  
+  <link rel="stylesheet" href="css/swstyles.css">
+  <script src="js/swmain.js" defer></script>
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-icon">★</span>
+      <span class="logo-text">Star Wars Archívum</span>
+    </div>
+    <button class="nav-toggle" aria-label="Menü váltása" aria-expanded="false">
+      ☰
+    </button>
+    <nav class="site-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="swtimeline.html">Idővonal</a></li>
+        <li><a href="swcharacters.html" class="active">Karakterek</a></li>
+        <li><a href="swships.html">Űrhajók</a></li>
+        <li><a href="swquiz.html">Star Wars kvíz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page page-characters">
+    <section class="section section-header">
+      <h1>Főbb szereplők</h1>
+      <p>
+        A galaxis sorsa hősök és gonosztevők döntésein múlik. Ismerj meg néhány
+        ikonikus karaktert!
+      </p>
+
+      <!-- Egyszerű név szerinti kereső (interaktív) -->
+      <div class="character-search">
+        <label for="characterSearch">Keresés név szerint:</label>
+        <input type="search" id="characterSearch" placeholder="Pl. Luke, Vader, Ahsoka...">
+      </div>
+    </section>
+
+    <section class="card-grid" id="characterList">
+      <article class="card character-card" data-name="Luke Skywalker" data-side="light">
+        <img src="images/luke_skywalker.jpg" alt="Luke Skywalker" class="card-image">
+        <div class="card-body">
+          <h2>Luke Skywalker</h2>
+          <p>
+            A Tatooine fiatal farmfiúja, aki a Jedi Rend reménységévé válik és
+            kulcsszerepet játszik a Birodalom bukásában.
+          </p>
+        </div>
+      </article>
+
+      <article class="card character-card" data-name="Darth Vader/Anakin Skywalker" data-side="dark">
+        <img src="images/darth_vader.jpg" alt="Darth Vader" class="card-image">
+        <div class="card-body">
+          <h2>Darth Vader/Anakin Skywalker</h2>
+          <p>
+            Az egykor Anakin Skywalker néven ismert Jedi, aki a sötét oldal
+            szolgálatába áll, és a Birodalom rettegett végrehajtója lesz.
+          </p>
+        </div>
+      </article>
+
+      <article class="card character-card" data-name="Leia Organa" data-side="light">
+        <img src="images/leia_organa.jpg" alt="Leia Organa" class="card-image">
+        <div class="card-body">
+          <h2>Leia Organa</h2>
+          <p>
+            Alderaan hercegnője, a Lázadók Szövetségének egyik vezetője, később a
+            Ellenállás tábornoka.
+          </p>
+        </div>
+      </article>
+
+      <article class="card character-card" data-name="R2-D2" data-side="light">
+      <img src="images/r2_d2.jpg" alt="R2-D2" class="card-image">
+      <div class="card-body">
+        <h2>R2-D2</h2>
+        <p>
+        Asztromecha droid, aki számtalan kritikus helyzetben menti meg gazdáit 
+        leleményességével és bátorságával. Titkos üzeneteket hordoz, hajókat javít, 
+        és gyakran ő az, aki csendben, a háttérből fordítja meg a galaxis sorsát.
+        </p>
+      </div>
+      </article>
+
+      <article class="card character-card" data-name="Palpatine császár" data-side="dark">
+      <img src="images/palpatine.jpg" alt="Palpatine császár" class="card-image">
+      <div class="card-body">
+        <h2>Palpatine császár</h2>
+        <p>
+        Sheev Palpatine, a Galaktikus Köztársaság kancellárja, valójában a sötét nagyúr 
+        Darth Sidious, aki a háttérből irányítva okozza a Köztársaság bukását. 
+        A Sithek Nagy Terve révén hozza létre a Galaktikus Birodalmat.
+        </p>
+      </div>
+      </article>
+
+
+      <article class="card character-card" data-name="Han Solo" data-side="neutral">
+        <img src="images/han_solo.jpg" alt="Han Solo" class="card-image">
+        <div class="card-body">
+          <h2>Han Solo</h2>
+          <p>
+            Csempész, a Millennium Falcon kapitánya, aki vonakodva ugyan, de a
+            Lázadás egyik hősévé válik.
+          </p>
+        </div>
+      </article>
+
+      <article class="card character-card" data-name="Yoda" data-side="light">
+      <img src="images/yoda.jpg" alt="Yoda mester" class="card-image">
+      <div class="card-body">
+        <h2>Yoda mester</h2>
+        <p>
+        A Jedi Rend egyik legbölcsebb és legerősebb mestere, aki évszázadokon át 
+        szolgálja a Köztársaságot. Mély kapcsolata van az Erővel, és tanítványok 
+        generációit vezeti a Jedi útján, köztük Luke Skywalkert is.
+        </p>
+      </div>
+      </article>
+
+      <article class="card character-card" data-name="Dooku gróf" data-side="dark">
+      <img src="images/dooku_count.jpg" alt="Dooku gróf" class="card-image">
+      <div class="card-body">
+        <h2>Dooku gróf</h2>
+        <p>
+        Egykori Jedi mester, aki kiábrándul a Rendből és csatlakozik Darth Sidioushoz, 
+        így válik Darth Tyranus néven a Sithek tanítványává. A szeparatista mozgalom 
+        vezetője, karizmatikus, mégis veszélyes ellenfél.
+        </p>
+      </div>
+      </article>
+
+
+      <article class="card character-card" data-name="Obi-Wan Kenobi" data-side="light">
+        <img src="images/obi_wan_kenobi.jpg" alt="Obi-Wan Kenobi" class="card-image">
+        <div class="card-body">
+          <h2>Obi-Wan Kenobi</h2>
+          <p>
+            Jedi mester, aki Anakin és Luke Skywalker mestere is, a galaxis
+            történelmének egyik kulcsfigurája.
+          </p>
+        </div>
+      </article>
+
+      <article class="card character-card" data-name="Ahsoka Tano" data-side="light">
+        <img src="images/ahsoka_tano.jpg" alt="Ahsoka Tano" class="card-image">
+        <div class="card-body">
+          <h2>Ahsoka Tano</h2>
+          <p>
+            Anakin tanítványa, aki elhagyja a Jedi Rendet, de továbbra is a
+            békéért harcol a galaxisban.
+          </p>
+        </div>
+      </article>
+
+      <article class="card character-card" data-name="Kylo Ren" data-side="dark">
+        <img src="images/kylo_ren.jpg" alt="Kylo Ren" class="card-image">
+        <div class="card-body">
+          <h2>Kylo Ren</h2>
+          <p>
+            Ben Solo, Leia és Han fia, aki a sötét oldal szolgálatába áll, majd a
+            saját útját keresi a galaxisban.
+          </p>
+        </div>
+      </article>
+
+      <article class="card character-card" data-name="Rey" data-side="light">
+        <img src="images/rey.jpg" alt="Rey" class="card-image">
+        <div class="card-body">
+          <h2>Rey</h2>
+          <p>
+            A Jakku bolygó roncsvadásza, aki felfedezi érzékenységét az Erőre és
+            a Jedi örökség folytatójává válik.
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Star Wars Archívum – Karakterek.</p>
+  </footer>
+
+  
+</body>
+</html>
